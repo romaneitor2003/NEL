@@ -1,0 +1,167 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background: #1f1f1f;
+  padding: 20px;
+  border-bottom: 3px solid #00fff2;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn-nav:hover {
+  border-color: #00fff2;
+  background: #252525;
+}
+
+.btn-nav::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn-inicio::before { background-image: url(https://www.pngall.com/wp-content/uploads/17/Blue-Lock-Symbol-PNG.png); }
+.btn-bm::before { background-image: url('https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-m3oef6yj78da1.png?width=1080&crop=smart&auto=webp&s=39dbafdb651a5c9d5d73440fc7a881e0b94d10cd'); }
+.btn-pxg::before { background-image: url('https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-xv53q3yj78da1.png?width=1000&format=png&auto=webp&s=ae3863d954ef3a65d91500da44eaadc1651bf0bb'); }
+.btn-u::before { background-image: url('https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-gfj393yj78da1.png?width=1000&format=png&auto=webp&s=a904cee072e100ccd8af7cb305ee471603af5684'); }
+.btn-fcb::before { background-image: url('https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-bbbeh6yj78da1.png?width=1000&format=png&auto=webp&s=e9ac61717f0bd20c5547664b6fc4fa7bd64daaaa'); }
+.btn-mc::before { background-image: url('https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-eixt0iyj78da1.png?width=1000&format=png&auto=webp&s=b690342039b1b9b22f01a46834d9513470627e5c'); }
+
+.logo-container img {
+  width: 180px;
+  margin: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo-container img:hover { transform: scale(1.15); }
+
+.equipo-section { display: none; padding: 40px 20px; animation: fadeIn 0.5s ease; }
+.active { display: block; }
+
+.card {
+  background: #222;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 5px solid #00fff2;
+}
+
+.img-master {
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid gold;
+  margin-bottom: 20px;
+}
+
+.grid-jugadores {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.p-card {
+  background: #111;
+  padding: 10px;
+  border-radius: 8px;
+  width: 220px;
+}
+
+.p-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.tooltip {
+  color: #00fff2; 
+  cursor: help;
+  border-bottom: 1px dashed #00fff2;
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip::after {
+  content: attr(data-info); 
+  position: absolute;
+  bottom: 125%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0; 
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  border: 1px solid #00fff2;
+  z-index: 10;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #00fff2 transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip:hover::before {
+  opacity: 1;
+}
+
+.alemania { color: #ffcc00; }
+.espana { color: #c60b1e; }
+.inglaterra { color: #00fff2; }
+.italia { color: #008c45; }
+.francia { color: #5158bb; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

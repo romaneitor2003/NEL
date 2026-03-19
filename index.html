@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00fff2">
+  <title>Neo Egoist League</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Neo Egoist League</h1>
+  <nav>
+    <ul>
+      <li><button class="btn-nav btn-inicio" onclick="cargar('menu')">Inicio</button></li>
+      <li><button class="btn-nav btn-bm" onclick="cargar('bm')">Bastard München</button></li>
+      <li><button class="btn-nav btn-fcb" onclick="cargar('fcb')">FC Barcha</button></li>
+      <li><button class="btn-nav btn-mc" onclick="cargar('mc')">Manshine City</button></li>
+      <li><button class="btn-nav btn-u" onclick="cargar('u')">Ubers</button></li>
+      <li><button class="btn-nav btn-pxg" onclick="cargar('pxg')">Paris X Gen</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="menu" class="equipo-section active">
+    <h2>Selecciona un Club</h2>
+    <div class="logo-container">
+      <img src="https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-m3oef6yj78da1.png?width=1080&crop=smart&auto=webp&s=39dbafdb651a5c9d5d73440fc7a881e0b94d10cd" alt="BM" onclick="cargar('bm')">
+      <img src="https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-bbbeh6yj78da1.png?width=1000&format=png&auto=webp&s=e9ac61717f0bd20c5547664b6fc4fa7bd64daaaa" alt="Barcha" onclick="cargar('fcb')">
+      <img src="https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-eixt0iyj78da1.png?width=1000&format=png&auto=webp&s=b690342039b1b9b22f01a46834d9513470627e5c" alt="Manshine" onclick="cargar('mc')">
+      <img src="https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-gfj393yj78da1.png?width=1000&format=png&auto=webp&s=a904cee072e100ccd8af7cb305ee471603af5684" alt="Ubers" onclick="cargar('u')"><img src="https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-xv53q3yj78da1.png?width=1000&format=png&auto=webp&s=ae3863d954ef3a65d91500da44eaadc1651bf0bb" alt="PXG" onclick="cargar('pxg')">
+
+    </div>
+  </section>
+
+  <section id="bm" class="equipo-section">
+    <div class="card">
+      <h2 class="alemania">Bastard München</h2>
+      <img src="https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-m3oef6yj78da1.png?width=1080&crop=smart&auto=webp&s=39dbafdb651a5c9d5d73440fc7a881e0b94d10cd" class="logo-top" width="100px">
+      <h3>Master: Noel Noa</h3>
+      <img src="https://static.wikia.nocookie.net/bluelock/images/1/1d/Noel_Noa.png" class="img-master">
+
+      <h3>Jugadores:</h3>
+      <div class="grid-jugadores">
+
+        <div class="p-card">
+          <p><strong>Isagi Yoichi</strong><br>Nº: 11 | Pos: <span class="tooltip" data-info="Mediocentro Ofensivo">MCO</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/3/39/Yoichi_Isagi.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Michael Kaiser</strong><br>Nº: 10 | Pos: <span class="tooltip" data-info="Centro Delantero">CD</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/f/f0/Michael_Kaiser.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Alexis Ness</strong><br>Nº: 8 | Pos: <span class="tooltip" data-info="Mediocentro Ofensivo">MCO</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/1/18/Alexis_Ness.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Kunigami Rensuke</strong><br>Nº: 50 | Pos: <span class="tooltip" data-info="Centro Delantero">CD</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/8/87/Rensuke_Kunigami.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Kenyu Yukimiya</strong><br>Nº: 15 | Pos: <span class="tooltip" data-info="Lateral Izquierdo">LI</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/7/73/Kenyu_Yukimiya.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Jingo Raichi</strong><br>Nº: 22 | Pos: <span class="tooltip" data-info="Mediocentro Defensivo">MCD</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/5/5c/Jingo_Raichi.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Hiori Yo</strong><br>Nº: 23 | Pos: <span class="tooltip" data-info="Lateral Derecho">LD</span></p>
+          <img src="https://static.wikia.nocookie.net/bluelock/images/6/65/Yo_Hiori.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Jin Kiyora</strong><br>Nº: 69 | Pos: <span class="tooltip" data-info="Lateral Derecho">LD</span></p>
+          <img src="https://static.wikia.nocookie.net/bluelock/images/a/a9/Jin_Kiyora.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Gin Gagamaru</strong><br>Nº: 99 | Pos: <span class="tooltip" data-info="Portero">POR</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/7/79/Gin_Gagamaru.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Gurimu Igarashi</strong><br>Nº: 76 | Pos: <span class="tooltip" data-info="Lateral Derecho">LD</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/a/aa/Gurimu_Igarashi.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Ranze Kurona</strong><br>Nº: 16 | Pos: <span class="tooltip" data-info="Lateral Derecho">LD</span></p>
+          <img src="https://static.wikia.nocookie.net/bluelock/images/a/ae/Ranze_Kurona.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fcb" class="equipo-section">
+    <div class="card">
+      <h2 class="espana">FC Barcha</h2>
+      <img src="https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-bbbeh6yj78da1.png?width=1000&format=png&auto=webp&s=e9ac61717f0bd20c5547664b6fc4fa7bd64daaaa" class="logo-top" width="100px">
+      <h3>Master: Lavinho</h3>
+      <img src="https://static.wikia.nocookie.net/bluelock/images/b/ba/Lavinho.png" class="img-master">
+      <h3>Jugadores:</h3>
+      <div class="grid-jugadores">
+        <div class="p-card">
+          <p><strong>Meguru Bachira</strong><br>Nº: 8 | Pos: <span class="tooltip" data-info="Centro Delantero">CD</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/f/f5/Meguru_Bachira.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Eita Otoya</strong><br>Nº: 13 | Pos: <span class="tooltip" data-info="Extremo Derecho">ED</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/2/23/Eita_Otoya.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mc" class="equipo-section">
+    <div class="card">
+      <h2 class="inglaterra">Manshine City</h2>
+      <img src="https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-eixt0iyj78da1.png?width=1000&format=png&auto=webp&s=b690342039b1b9b22f01a46834d9513470627e5c" class="logo-top" width="100px">
+      <h3>Master: Chris Prince</h3>
+      <img src="https://static.wikia.nocookie.net/bluelock/images/f/f1/Chris_Prince.png" class="img-master">
+      <h3>Jugadores:</h3>
+      <div class="grid-jugadores">
+        <div class="p-card">
+          <p><strong>Nagi Seishiro</strong><br>Nº: 7 | Pos: <span class="tooltip" data-info="Centro Delantero">CD</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/c/c9/Seishiro_Nagi.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Chigiri Hyoma</strong><br>Nº: 44 | Pos: <span class="tooltip" data-info="Extremo Izquierdo">EI</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/f/f5/Hyoma_Chigiri.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Mikage Reo</strong><br>Nº: 14 | Pos: <span class="tooltip" data-info="Mediocentro">MC</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/4/40/Reo_Mikage.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Agi</strong><br>Nº: 9 | Pos: <span class="tooltip" data-info="Centro Delantero">CD</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/5/5c/Agi.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Kazuma Nio</strong><br>Nº: 20 | Pos: <span class="tooltip" data-info="Defensa Central">DFC</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/0/0b/Kazuma_Nio.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Reiji Hiiragi</strong><br>Nº: 17 | Pos: <span class="tooltip" data-info="Mediocentro Ofensivo">MCO</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/d/dd/Reiji_Hiiragi.png">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="u" class="equipo-section">
+    <div class="card">
+      <h2 class="italia">Ubers</h2>
+      <img src="https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-gfj393yj78da1.png?width=1000&format=png&auto=webp&s=a904cee072e100ccd8af7cb305ee471603af5684" class="logo-top" width="100px">
+      <h3>Master: Marc Snuffy</h3>
+      <img src="https://static.wikia.nocookie.net/bluelock/images/e/e7/Marc_Snuffy.png" class="img-master">
+      <h3>Jugadores:</h3>
+      <div class="grid-jugadores">
+        <div class="p-card">
+          <p><strong>Shoei Barou</strong><br>Nº: 13 | Pos: <span class="tooltip" data-info="Centro Delantero">CD</p><img src="https://static.wikia.nocookie.net/bluelock/images/f/f0/Shoei_Baro.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Don Lorenzo</strong><br>Nº: 2 | Pos: <span class="tooltip" data-info="Defensa Central">DFC</span></p>
+          <img src="https://static.wikia.nocookie.net/bluelock/images/3/38/Lorenzo_Teeth.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Oliver Aiku</strong><br>Nº: 23 | Pos: <span class="tooltip" data-info="Defensa Central">DFC</span></p>
+          <img src="https://static.wikia.nocookie.net/bluelock/images/f/fc/Oliver_Aiku.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Jyubei Aryu</strong><br>Nº: 3 | Pos: <span class="tooltip" data-info="Defensa Central">DFC</span></p>
+          <img src="https://static.wikia.nocookie.net/bluelock/images/4/40/Jyubei_Aryu.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Ikki Niko</strong><br>Nº: 25 | Pos: <span class="tooltip" data-info="Mediocentro Defensivo">MCD</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/a/a4/Ikki_Niko.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Shuto Sendo</strong><br>Nº: 18 | Pos: <span class="tooltip" data-info="Segundo Delantero">SD</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/1/19/Shuto_Sendo.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Gen Fukaku</strong><br>Nº: 50 | Pos: <span class="tooltip" data-info="Portero">POR</span></p>
+            <img src="https://static.wikia.nocookie.net/bluelock/images/4/44/Gen_Fukaku.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pxg" class="equipo-section">
+    <div class="card">
+      <h2 class="francia">Paris X Gen</h2>
+      <img src="https://preview.redd.it/i-colored-the-nel-teams-logos-based-off-their-irls-v0-xv53q3yj78da1.png?width=1000&format=png&auto=webp&s=ae3863d954ef3a65d91500da44eaadc1651bf0bb" class="logo-top" width="100px">
+      <h3>Master: Julian Loki</h3>
+      <img src="https://static.wikia.nocookie.net/bluelock/images/2/21/Julian_Loki.png" class="img-master">
+      <h3>Jugadores:</h3>
+      <div class="grid-jugadores">
+        <div class="p-card">
+          <p><strong>Rin Itoshi</strong><br>Nº: 9 | Pos: <span class="tooltip" data-info="Centro Delantero">CD</span></p>
+          <img src="https://static.wikia.nocookie.net/bluelock/images/1/12/Rin_Itoshi.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Ryusei Shidou</strong><br>Nº: 99 | Pos: <span class="tooltip" data-info="Centro Delantero">CD</span></p>
+          <img src="https://static.wikia.nocookie.net/bluelock/images/b/b3/Ryusei_Shido.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Charles Chevalier</strong><br>Nº: 6 | Pos: <span class="tooltip" data-info="Mediocentro Ofensivo">MCO</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/6/6d/Charles.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Tabito Karasu</strong><br>Nº: 27 | Pos: <span class="tooltip" data-info="Mediocentro Defensivo">MCD</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/4/4b/Tabito_Karasu.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Aoshi Tokimitsu</strong><br>Nº: 20 | Pos: <span class="tooltip" data-info="Mediocentro Defensivo">MCD</span></p>
+            <img src="https://static.wikia.nocookie.net/bluelock/images/b/b4/Aoshi_Tokimitsu.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Zantetsu Tsurugi</strong><br>Nº: 29 | Pos: <span class="tooltip" data-info="Extremo Derecho">ED</span></p><img src="https://static.wikia.nocookie.net/bluelock/images/3/39/Zantetsu_Tsurugi.png">
+        </div>
+        <div class="p-card">
+          <p><strong>Nijirio Nanase</strong><br>Nº: 77 | Pos: <span class="tooltip" data-info="Mediocentro">MC</span></p>
+            <img src="https://static.wikia.nocookie.net/bluelock/images/8/86/Nijiro_Nanase.png">
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
